@@ -43,7 +43,7 @@ i {
     border-radius: 50%;
 }
 h2 {
-    font-size: 3em;
+    font-size:2em;
     color: #7d2ae8;
     margin: 15px 0;
 }
@@ -79,10 +79,10 @@ button:nth-child(2) {
 <body>
     <div class="wrapper" style="text-align: center;" >
         <i class="fa-solid">😁</i>
-        <h2 class="question">Tissue  <br> Do you love me ?</h2>
+        <h2 class="question">Tissue  <br> Do you love me ?<br>I bet you , you can't say no 🤪</h2>
         <div class="btn-group">
             <button class="yes-btn">Yes</button>
-            <button class="no-btn">No</button>
+            <button class="no-btn"><div style="width: 100%;height: 100%;background-color:transparent;">No</div></button>
         </div>
     </div>
     <script>const wrapper = document.querySelector('.wrapper');
@@ -92,7 +92,7 @@ const noBtn = document.querySelector('.no-btn');
 const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
 yesBtn.addEventListener('click', () => {
-    question.innerHTML = 'awww 😉!  okay ,<br>I Love You Too 😘🤪';
+    question.innerHTML = 'awww 😉!  okay ,<br>I Love You Too tisuuuuu 😘🤪';
 });
 noBtn.addEventListener('mouseover', () => {
     const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
